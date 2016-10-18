@@ -1,0 +1,5 @@
+= Binarybeat Docs
+
+Welcome to the Binarybeat documentation.
+
+
