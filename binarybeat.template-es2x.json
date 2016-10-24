@@ -44,8 +44,17 @@
             }
           }
         },
-        "counter": {
-          "type": "long"
+        "input_type": {
+          "ignore_above": 1024,
+          "index": "not_analyzed",
+          "type": "string"
+        },
+        "message": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
         },
         "meta": {
           "properties": {
@@ -85,7 +94,20 @@
             }
           }
         },
+        "offset": {
+          "type": "long"
+        },
+        "source": {
+          "ignore_above": 1024,
+          "index": "not_analyzed",
+          "type": "string"
+        },
         "tags": {
+          "ignore_above": 1024,
+          "index": "not_analyzed",
+          "type": "string"
+        },
+        "type": {
           "ignore_above": 1024,
           "index": "not_analyzed",
           "type": "string"
